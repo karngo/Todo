@@ -1,0 +1,15 @@
+describe('this is the first test', function(){
+    it('does not do anything', function(){
+        // expect(true).to.equal(true)
+        cy.pause()
+        cy.visit('http://localhost:8080')
+        cy.get('ul')
+        cy.contains('Add new').click()
+        cy.get('input')
+        .type('this is the first todo')
+        .should('have.value', 'this is the first todo')
+        cy.get('textarea')
+        .type('this is the description for first todo')
+        cy.get('button').contains('Save').click()
+    })
+})
