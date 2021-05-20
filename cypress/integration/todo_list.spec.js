@@ -1,8 +1,7 @@
 describe('Adding Task', function(){
     it('adds a new task in the list', function(){
-        // expect(true).to.equal(true)
         cy.visit('http://localhost:8080')
-        // cy.pause()
+        cy.pause()
         let listLength = 0
         cy.get('[type="checkbox"]').then(($value) => {
             listLength = $value.length
