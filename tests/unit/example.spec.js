@@ -1,7 +1,5 @@
-// import { shallowMount } from '@vue/test-utils'
-// import HelloWorld from '@/components/HelloWorld.vue'
 import store from '@/store/store.js'
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(store.getters.getTodos).toEqual([]);
+test('store getter should return a list of tasks that user have added', () => {
+  expect(store.getters.getTodos).toHaveLength(5)
 });

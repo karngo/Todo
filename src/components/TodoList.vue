@@ -26,7 +26,7 @@
                     </v-col>
                 </v-row>
             </v-card-title>
-            <v-card-text v-show="descriptionIndex === indx">
+            <v-card-text v-show="descriptionIndex === indx" style="white-space: pre-wrap;">
                 {{todo.description}}
             </v-card-text>
         </v-card>
